@@ -28,9 +28,13 @@ var x = 0;
 function iLoveTheBeatles(number) {
   var results = [];
   var i = 0
+  if(number > 15) {
+    results.push("I love the Beatles!")
+  } else {
   do {
     results.push("I love the Beatles!");
     i++;
-  }while (i < number && i < 15)
+  }while (i < number + 1)
+}
   return results;
 }
